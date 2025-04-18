@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(146, 48, 48);
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 1s all ease;
+  overflow: hidden;
+}
+body.bactive3 {
+  background-color: rgb(146, 48, 48);
+}
+body.bactive1 {
+  background-color: rgb(21, 170, 130);
+}
+body.bactive2 {
+  background-color: rgb(6, 102, 167);
+}
+.container-button {
+  width: 30rem;
+  height: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+button {
+  width: 7rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+  transition: 1s all;
+  cursor: pointer;
+}
+.active {
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  width: 8.5rem;
+}
+button:hover {
+  width: 9rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+
+.grid {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  padding: 1rem;
+}
+.content-timer-pomodoro {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(70, 66, 66, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.display {
+  width: 100%;
+  height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.display p {
+  font-size: 8rem;
+  color: white;
+}
+
+#stop {
+  display: none;
+  transition: 1s all;
+}
+
+@media (min-width: 350px) and (max-width: 390px) {
+  html {
+    font-size: 11px;
+  }
+  .grid {
+    height: 20rem;
+  }
+  .container-button {
+    flex-direction: row;
+    height: auto;
+    width: 90%;
+    gap: 20px;
+  }
+  button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: inherit;
+    border: 1px solid white;
+    color: white;
+    transition: 1s all;
+    cursor: pointer;
+  }
+  .active {
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    width: 10rem;
+  }
+  button:hover {
+    width: 12rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+  }
+  #start {
+    width: 15rem;
+    height: 17rem;
+  }
+}
+
+@media (min-width: 391px) and (max-width: 500px) {
+  html {
+    font-size: 11px;
+  }
+  body {
+    justify-content: start;
+  }
+  .grid {
+    height: 30rem;
+  }
+  .container-button {
+    margin-top: 10rem;
+    flex-direction: row;
+    height: auto;
+    width: 90%;
+    gap: 20px;
+  }
+  button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: inherit;
+    border: 1px solid white;
+    color: white;
+    transition: 1s all;
+    cursor: pointer;
+  }
+  .active {
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    width: 10rem;
+  }
+  button:hover {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+  }
+  #start {
+    width: 15rem;
+    height: 4rem;
+  }
+  .display p {
+    font-size: 10rem;
+  }
+}
