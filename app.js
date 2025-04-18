@@ -18,7 +18,7 @@ btnStartTimer.addEventListener("click", () => {
     btnStartTimer.textContent = "Pause";
     btnStartTimer.classList.remove("active");
     console.log("if");
-    intervalId = setInterval(startTimer, 10);
+    intervalId = setInterval(startTimer, 1000);
   } else {
     btnStartTimer.classList.add("active");
     clearInterval(intervalId);
