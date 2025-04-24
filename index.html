@@ -7,6 +7,45 @@
     <title>Pomodoro Time</title>
   </head>
   <body>
+    <button id="btn-info">!</button>
+    <button id="btn-report">R</button>
+    <div class="banner-report">
+      <button id="btn-close-report">X</button>
+      <p>
+        Pomodori completati :
+        <span id="pomodoriCompletati" style="color: red"></span>
+        <br />
+        Minuti di Focus :
+        <span id="oreDiFocus" style="color: red"></span>
+        <br />Pause corte prese :
+        <span id="pauseCortePrese" style="color: rgb(21, 170, 130)"></span>
+        <br />Minuti di pause corte :
+        <span id="oreDiPauseCorte" style="color: rgb(21, 170, 130)"></span>
+        <br />Pause lunghe prese :
+        <span id="pauseLunghePrese" style="color: rgb(6, 102, 167)"></span>
+        <br />Minuti di pause lunghe prese :
+        <span id="oreDiPauseLunghe" style="color: rgb(6, 102, 167)"></span>
+      </p>
+    </div>
+
+    <div class="banner">
+      <button id="btn-close-info">X</button>
+      <p id="info">
+        Il Pomodoro Timer è uno strumento che ti aiuta a mantenere la
+        concentrazione e a gestire il tempo in modo efficace. Utilizzando la
+        tecnica del "Pomodoro", ogni sessione dura 25 minuti, durante i quali
+        devi focalizzarti completamente su ciò che stai facendo. Quando i 25
+        minuti sono scaduti, hai completato un "pomodoro" e puoi prenderti una
+        breve pausa. Dopo aver completato un paio di pomodori, è il momento di
+        concederti una pausa più lunga per ricaricare le energie. Questa tecnica
+        ti aiuta a massimizzare la produttività e a evitare il burnout,
+        migliorando la tua gestione del tempo! <br />
+        ISPIRATO A :
+        <a href="https://pomofocus.io/">pomofocus</a>
+      </p>
+    </div>
+    <h1>Pomodoro Time</h1>
+
     <div class="container-button">
       <button id="timer-pomodoro" class="active">Timer</button
       ><button id="break-short">Pausa corta</button
@@ -16,13 +55,16 @@
       <div class="content-timer-pomodoro">
         <button id="start" class="active">Start</button>
         <div class="display">
-          <p id="minuti">1</p>
+          <p id="minuti">25</p>
           <p>:</p>
           <p id="secondi">00</p>
         </div>
-        <p>Task : <span id="task"></span></p>
       </div>
     </div>
+    <p id="info-task">Pomodori completati :</p>
+    <span id="task-pomodoro"></span>
+    <span id="task-short"></span>
+    <span id="task-long"></span>
 
     <script src="app.js"></script>
   </body>
